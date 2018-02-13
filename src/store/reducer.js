@@ -33,6 +33,11 @@ const reducer = (state = initialState, action) => {
           value: state.counter
         })
       }
+    case 'DELETE_RESULT':
+      return {
+        ...state,
+        results: state.results.filter(result => result.id !== action.id)
+      }
   }
   return state
 }
