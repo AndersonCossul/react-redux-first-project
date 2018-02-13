@@ -15,6 +15,11 @@ const reducer = (state = initialState, action) => {
           age: Math.floor( Math.random() * 40 )
         })
       }
+    case actions.DELETE_PERSON:
+      return {
+        ...state,
+        persons: state.persons.filter(person => person.id !== action.id)
+      }
   }
   return state
 }
