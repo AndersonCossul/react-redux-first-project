@@ -1,0 +1,9 @@
+// COUNTER
+export const INCREMENT_COUNTER  = 'INCREMENT_COUNTER'
+export const DECREMENT_COUNTER  = 'DECREMENT_COUNTER'
+export const ADD_COUNTER        = 'ADD_COUNTER'
+export const SUBTRACT_COUNTER   = 'SUBTRACT_COUNTER'
+
+// RESULT
+export const STORE_RESULT       = 'STORE_RESULT'
+export const DELETE_RESULT      = 'DELETE_RESULT'
