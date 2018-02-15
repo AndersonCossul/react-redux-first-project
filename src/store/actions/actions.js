@@ -30,13 +30,21 @@ export const subtractCounter = value => {
     value: value
   }
 }
-
 export const storeResult = counter => {
+  return dispatch => {
+    setTimeout(() => {
+      dispatch(saveResult(counter))
+    }, 2000)
+  }
+}
+
+export const saveResult = counter => {
   return {
     type: STORE_RESULT,
     counter: counter
   }
 }
+
 
 export const deleteResult = id => {
   return {
